@@ -1,0 +1,7 @@
+# Part 1
+
+Take the absolute value of the minimum y value and find the sum of 1 to y_min - 1.
+
+# Part 2
+
+See solution.ts

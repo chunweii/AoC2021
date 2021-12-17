@@ -31,7 +31,7 @@ function convertHexToBin(str) {
     }
     return result;
 }
-const input = fs.readFileSync(path.join(__dirname, "test.txt")).toString().trim();
+const input = fs.readFileSync(path.join(__dirname, "input.txt")).toString().trim();
 const bits = convertHexToBin(input);
 // console.log(bits);
 function solvePacket(start, end = bits.length - 1) {

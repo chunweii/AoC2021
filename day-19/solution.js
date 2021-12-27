@@ -89,6 +89,7 @@ function arrayEqual(array1, array2) {
 function manhattanDistance(scanner1, scanner2) {
     return Math.abs(scanner1[0] - scanner2[0]) + Math.abs(scanner1[1] - scanner2[1]) + Math.abs(scanner1[2] - scanner2[2]);
 }
+console.time();
 const allRotationMatrices = getOrientations();
 const lines = (0, fs_1.readFileSync)(0).toString().trim().split(/\n+/); // STDIN_FILENO = 0
 const rawBeaconData = [];
@@ -141,3 +142,4 @@ for (const scanner1 of scannerLocations) {
     }
 }
 console.log(maxDist);
+console.timeEnd();

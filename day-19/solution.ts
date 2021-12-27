@@ -82,6 +82,8 @@ function manhattanDistance(scanner1: number[], scanner2: number[]): number {
     return Math.abs(scanner1[0] - scanner2[0]) + Math.abs(scanner1[1] - scanner2[1]) + Math.abs(scanner1[2] - scanner2[2]);
 }
 
+console.time();
+
 const allRotationMatrices = getOrientations();
 
 const lines = (readFileSync(0).toString().trim() as string).split(/\n+/); // STDIN_FILENO = 0
@@ -144,3 +146,4 @@ for (const scanner1 of scannerLocations) {
     }
 }
 console.log(maxDist);
+console.timeEnd();
